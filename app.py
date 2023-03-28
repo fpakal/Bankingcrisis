@@ -40,4 +40,4 @@ with gr.Blocks() as crisis_dashboard:
     #text.submit(infer, inputs=[text, style,steps, seed, scale], outputs=gallery)
     #btn.click(infer, inputs=[text, style,steps, seed, scale], outputs=gallery)
         
-crisis_dashboard.launch()
+crisis_dashboard.launch(share=True)
