@@ -26,10 +26,10 @@ with gr.Blocks() as crisis_dashboard:
     with gr.Tab("Interest Rates"):
         with gr.Row():
             with gr.Column():
-                gr.Markdown("## <center>Treasury yield curve</center>")
+                # gr.Markdown("## <center>Treasury yield curve</center>")
                 gr.Plot(plot_treasury_curves(yc_frame))
             with gr.Column():
-                gr.Markdown("## <center>Credit spreads</center>")
+                # gr.Markdown("## <center>Credit spreads</center>")
                 gr.Plot(plot_credit_spreads(spread_frame))
         gr.Markdown("### <center>Data Source: FRED</center>")
     #with gr.Tab("Fed Balance Sheet"):
