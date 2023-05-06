@@ -4,10 +4,12 @@ import numpy as np
 from data_proc import load_equity_data, load_yield_curve_data, load_credit_spread_data, load_fed_balance_sheet
 from data_proc import plot_treasury_curves, plot_credit_spreads, plot_fed_balance_sheet
 
-loser_frame, largest_frame = load_equity_data()
-yc_frame = load_yield_curve_data()
-spread_frame = load_credit_spread_data()
-fed_frame = load_fed_balance_sheet()
+data_from_file = True
+
+loser_frame, largest_frame = load_equity_data(data_from_file)
+yc_frame = load_yield_curve_data(data_from_file)
+spread_frame = load_credit_spread_data(data_from_file)
+fed_frame = load_fed_balance_sheet(data_from_file)
 
 with gr.Blocks() as crisis_dashboard:
     gr.Markdown("<font size=36><center>Banking Crisis Dashboard</center></font>")
